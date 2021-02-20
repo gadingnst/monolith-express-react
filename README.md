@@ -12,7 +12,7 @@ The reason why it's cost-effective are:
 - The irony is, because you're `Backend` and `Frontend`.
 
 ## Setup
-- Clone repository `$ git clone https://github.com/sutanlab/monolith-react-express.git`
+- Clone repository `$ git clone https://github.com/sutanlab/monolith-express-react.git`
 
 - Install depedencies
 ```bash
