@@ -9,7 +9,7 @@ The reason why it's cost-effective are:
 - Because it can be easily integrate with Github.
 - Because `Backend` and `Frontend` only have one `node_modules`.
 - Because `Backend` and `Frontend` can share code with each other.
-- The irony is, because you're `Backend` and `Frontend`.
+- The irony is, because you're both `Backend` and `Frontend`.
 
 ## Setup
 - Clone repository `$ git clone https://github.com/sutanlab/monolith-express-react.git`
