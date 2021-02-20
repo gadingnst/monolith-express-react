@@ -3,7 +3,7 @@ import Dotenv from 'dotenv'
 Dotenv.config()
 
 export const {
-  NODE_ENV = 'production
+  NODE_ENV = 'production'
 } = process.env
 
 export const IS_PRODUCTION = NODE_ENV === 'production'
