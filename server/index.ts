@@ -20,7 +20,7 @@ export default class Server {
     this.application.use(Routes)
   }
   
-  public async run() {
+  public run() {
     try {
       this.plugins()
       this.routes()
