@@ -4,7 +4,7 @@ import { PORT } from './utils/config'
 
 export default class Server {
   private application: Application
-  private port: number | string
+  private port: number|string
 
   constructor() {
     this.port = PORT
