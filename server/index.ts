@@ -1,12 +1,13 @@
 import Express, { Application } from 'express'
 import Routes from './routes'
+import { PORT } from './utils/config'
 
 export default class Server {
   private application: Application
   private port: number | string
 
   constructor() {
-    this.port = process.env.PORT || 3000
+    this.port = PORT
     this.application = Express()
   }
   
