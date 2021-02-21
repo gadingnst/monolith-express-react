@@ -4,12 +4,12 @@
   "description": "Monolithic Express + React Boilerplate with TypeScript and Vercel ❤",
   "private": true,
   "scripts": {
-    "start": "NODE_ENV=production node dist/index.js",
+    "start": "cross-env NODE_ENV=production node dist/index.js",
     "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
     "build": "npm run build:client && npm run build:server",
     "deploy": "vercel --prod",
     "dev:server": "nodemon",
-    "dev:client": "set PORT=5000 && react-scripts start",
+    "dev:client": "cross-env PORT=5000 react-scripts start",
     "build:server": "tsc --project tsconfig.server.json",
     "build:client": "react-scripts build",
     "test:client": "react-scripts test",
@@ -43,13 +43,11 @@
     ]
   },
   "dependencies": {
+    "cross-env": "^7.0.3",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "node-sass": "^5.0.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-scripts": "4.0.2",
-    "typescript": "^4.1.5",
     "vercel": "^21.2.3",
     "web-vitals": "^1.1.0"
   },
@@ -62,8 +60,11 @@
     "@types/node": "^12.20.4",
     "@types/react": "^17.0.2",
     "@types/react-dom": "^17.0.1",
+    "react-scripts": "4.0.2",
     "concurrently": "^5.3.0",
     "nodemon": "^2.0.7",
-    "ts-node": "^9.1.1"
+    "ts-node": "^9.1.1",
+    "node-sass": "^5.0.0",
+    "typescript": "^4.1.5"
   }
 }
