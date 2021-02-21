@@ -14,16 +14,12 @@ export default class Server {
   private plugins() {
     this.application.use(Express.urlencoded({ extended: true }))
     this.application.use(Express.json())
-  }
-  
-  private routes() {
     this.application.use(Routes)
   }
   
   public run() {
     try {
       this.plugins()
-      this.routes()
       this.application.listen(this.port, () => {
         console.log(`> Server running on http://localhost:${this.port}`)
       })
@@ -34,5 +30,4 @@ export default class Server {
   }
 }
 
-const server = new Server()
-server.run()
+new Server().run()
