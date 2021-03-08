@@ -14,7 +14,8 @@
     "build:client": "react-scripts build",
     "test:client": "react-scripts test",
     "eject:client": "react-scripts eject",
-    "postbuild": "react-snap"
+    "cleanup": "rm -rf build/api",
+    "postbuild": "react-snap; npm run cleanup"
   },
   "author": "Sutan Nasution <contact@sutanlab.id>",
   "license": "MIT",
