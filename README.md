@@ -1,5 +1,9 @@
 # Monolithic React + Express Boilerplate with TypeScript ❤
 
+## DEMO
+- [React App](https://monolith-express-react.sutanlab.id)
+- [API Endpoint at `/api`](https://monolith-express-react.sutanlab.id/api/voucher)
+
 ## Why i made this?
 Short Answer: ***Personal Purpose***
 
