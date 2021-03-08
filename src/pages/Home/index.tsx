@@ -27,6 +27,9 @@ const Home: FunctionComponent = () => {
         <Link className="App-link" to="/about">
           Go To About
         </Link>
+        <a className="App-Link" href={`${API_BASEURL}/voucher`} style={{ color: 'whitesmoke', marginTop: 10 }}>
+          Check Deployed Dummy API
+        </a>
       </header>
     </div>
   )
