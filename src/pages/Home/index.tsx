@@ -22,7 +22,8 @@ const Home: FunctionComponent = () => {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          This is Home page.
+          This is Home page. <br />
+          (For make sure the API works, please check browser log.)
         </p>
         <Link className="App-link" to="/about">
           Go To About
