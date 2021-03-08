@@ -1,5 +1,6 @@
 node_modules
 build
 dist
+dist-server
 .env
 .vercel

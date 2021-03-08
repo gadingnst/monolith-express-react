@@ -8,4 +8,4 @@ export const {
 } = process.env
 
 export const IS_PRODUCTION = NODE_ENV === 'production'
-export const CLIENT_BUILD_PATH = `${__dirname}/../../build`
+export const CLIENT_BUILD_PATH = `${__dirname}/../../dist`

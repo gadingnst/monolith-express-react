@@ -4,10 +4,19 @@
     {
       "src": "server/index.ts",
       "use": "@now/node-server"
+    },
+    {
+      "src": "package.json",
+      "use": "@now/static-build",
+      "config": {
+          "distDir": "dist"
+      }
     }
   ],
-  "routes": [{
-    "src": "/.*",
-    "dest": "server/index.ts"
-  }]
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "server/index.ts"
+    }
+  ]
 }
