@@ -3,10 +3,10 @@
 ## Why i made this?
 Short Answer: ***Personal Purpose***
 
-Long Answer: Because me (or maybe you?) want to build a monorepo/monolith project with Express and React which combines server and frontend in one repository.
+Long Answer: Because me (or maybe you?) want to build a monorepo/monolith project with Express and React which combines server and frontend in one repository. Of course, it's cost-effective!
+
 The reason why it's cost-effective are:
-- That's right, because this boilerplate can be deployed on [Vercel](https://vercel.com) for free.
-- Because it can be easily integrate with Github.
+- That's right, because it's simpler and can be deployed on [Vercel](https://vercel.com) for free.
 - Because `Backend` and `Frontend` only have one `node_modules`.
 - Because `Backend` and `Frontend` can share code with each other.
 - The irony is, because you're the both `Backend` and `Frontend`.

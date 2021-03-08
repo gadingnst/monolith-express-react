@@ -1,6 +1,6 @@
-import { Router, RequestHandler } from 'express'
+import { Router } from 'express'
 
-export default abstract class {
+abstract class BaseRouter {
   public router: Router
   
   constructor() {
@@ -10,3 +10,5 @@ export default abstract class {
   
   protected abstract routes(): void
 }
+
+export default BaseRouter

@@ -2,12 +2,21 @@
   "version": 2,
   "builds": [
     {
-      "src": "server/index.ts",
+      "src": "build-server/index.js",
       "use": "@now/node-server"
+    },
+    {
+      "src": "package.json",
+      "use": "@now/static-build",
+      "config": {
+          "distDir": "build"
+      }
     }
   ],
-  "routes": [{
-    "src": "/.*",
-    "dest": "server/index.ts"
-  }]
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "build-server/index.js"
+    }
+  ]
 }
