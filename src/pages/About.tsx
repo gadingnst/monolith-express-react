@@ -1,9 +1,6 @@
 import { Fragment, FunctionComponent } from 'react'
-import { API_BASEURL } from '../utils/config'
 
 export const route = '/about'
-
-console.log({ API_BASEURL })
 
 const Page: FunctionComponent = () => (
   <Fragment>

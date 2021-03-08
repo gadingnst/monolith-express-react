@@ -1,4 +1,3 @@
-  
 const { join, relative, basename, dirname } = require('path')
 const { readdirSync, statSync, readFileSync } = require('fs')
 

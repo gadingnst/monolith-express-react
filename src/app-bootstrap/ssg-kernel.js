@@ -1,9 +1,7 @@
-
 const { readFileSync, writeFileSync, mkdirSync } = require('fs')
 const { basename, dirname, resolve } = require('path')
 
 require = require('esm')(module)
-const React = require('react')
 
 require('ts-node').register({
   compilerOptions: {
@@ -16,7 +14,6 @@ require('ts-node').register({
   transpileOnly: true
 })
 
-global.React = React
 global.XMLHttpRequest = class {}
 global.XDomainRequest = class {}
 global.localStorage = {
@@ -36,6 +33,7 @@ global.document = {
   }
 }
 
+const React = require('react')
 const { MemoryRouter } = require('react-router')
 const { renderToString } = require('react-dom/server')
 
