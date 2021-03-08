@@ -48,6 +48,12 @@ $ npm start
 $ yarn start 
 ```
 
+- Deploy to vercel
+```bash
+$ npm run deploy
+# or
+$ yarn deploy
+```
 ## LICENSE
 MIT
 
