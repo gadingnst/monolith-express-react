@@ -2,6 +2,7 @@ import { Router } from 'express'
 
 abstract class BaseRouter {
   public router: Router
+  public abstract baseRoute: string
   
   constructor() {
     this.router = Router()

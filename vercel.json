@@ -17,6 +17,10 @@
     {
       "source": "/api/(.*)",
       "destination": "build-server/index.js"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "build/404.html"
     }
   ]
 }

@@ -7,7 +7,7 @@ export default class HttpError extends Error {
   }
   
   public static handle(req: Request, res: Response, err: Error): Response {
-    if (err instanceof this) {
+    if (err.message.includes('code')) {
       const error = JSON.parse(err.message)
       console.error(error)
       return res.status(error.code).send(error)

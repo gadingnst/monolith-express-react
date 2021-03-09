@@ -1,7 +1,5 @@
 node_modules
 build
-dist
 build-server
-dist-server
 .env
 .vercel
