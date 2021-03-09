@@ -13,14 +13,16 @@
       }
     }
   ],
-  "rewrites": [
+  "routes": [
     {
-      "source": "/api/(.*)",
-      "destination": "build-server/index.js"
+      "src": "/api/(.*)",
+      "dest": "build-server/index.js"
     },
+    { "handle": "filesystem" },
     {
-      "source": "/(.*)",
-      "destination": "build/404.html"
+      "src": "/(.*)",
+      "status": 404,
+      "dest": "build/404.html"
     }
   ]
 }
