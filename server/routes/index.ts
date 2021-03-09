@@ -12,7 +12,7 @@ class Routes extends Router {
     if (IS_PRODUCTION) {
       this.router.use(Express.static(CLIENT_BUILD_PATH))
       this.router.use('*', (_, res) => {
-        res.sendFile(Path.resolve(CLIENT_BUILD_PATH, 'index.html'))
+        res.status(404).sendFile(Path.resolve(CLIENT_BUILD_PATH, 'index.html'))
       })
     }
   }
